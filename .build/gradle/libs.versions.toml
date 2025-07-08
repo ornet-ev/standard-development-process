@@ -1,0 +1,17 @@
+[versions]
+clikt = "2.8.0"
+log4j-core = "2.19.0"
+log4j-kotlin-api = "1.5.0"
+xmlschema2asciidoc = "1.0.2"
+asciidoc-converter = "4.1.4"
+repository-collection = "2.1.0"
+
+[libraries]
+clikt = { module = "com.github.ajalt:clikt", version.ref = "clikt" }
+xmlschema2asciidoc = { module = "org.somda.run:xmlschema2asciidoc", version.ref = "xmlschema2asciidoc" }
+asciidoc-converter = { module = "org.somda.asciidoc:asciidoc-converter", version.ref ="asciidoc-converter" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j-core" }
+log4j-api-kotlin = { module = "org.apache.logging.log4j:log4j-api-kotlin", version.ref = "log4j-kotlin-api" }
+
+[plugins]
+org-somda-repository-collection = { id = "org.somda.repository_collection", version.ref = "repository-collection" }

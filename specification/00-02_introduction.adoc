@@ -1,0 +1,30 @@
+
+// preface designates the standard's introduction clause
+[preface]
+== Introduction
+
+The IEEE 11073 Point-of-Care Medical Device Communication Standards
+enable communication between health IT elements in a <<HEALTH_IT_SYSTEM>>
+including <<MEDICAL_DEVICE>>s. They provide automatic and detailed
+electronic data capture of patient vital signs information and device
+operational data. The primary goals are to:
+
+- Provide real-time plug-and-play interoperability for <<MEDICAL_DEVICE>>s.
+“Real-time” means that data from multiple <<MEDICAL_DEVICE>>s can be
+retrieved, temporally correlated, displayed, and processed in fractions
+of a second. “Plug-and-play” means that there are no recurring
+configuration steps necessary to enable data exchange between
+<<MEDICAL_DEVICE>>s.
+- Facilitate the efficient and effective exchange of vital signs and
+<<MEDICAL_DEVICE>> data acquired at the PoC in all health care environments.
+“Efficient and effective exchange of <<MEDICAL_DEVICE>> data” means that
+data captured at the PoC, e.g., patient vital signs, can be received,
+parsed, and interpreted by different types of applications without the
+loss of safety-critical information.
+
+The IEEE 11073 Point-of-Care Medical Device Communication Standards are
+targeted at surgical as well as acute and continuous care devices, such
+as patient monitors, ventilators, infusion pumps, ECG devices,
+endoscopic camera systems, insufflators, dissectors, etc. They build a
+family of standards that can be bound to one another to provide
+optimized connectivity for <<MEDICAL_DEVICE>>s at the PoC.

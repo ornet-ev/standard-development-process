@@ -1,0 +1,44 @@
+
+[appendix#anx_OID_Assignments, normativity='normative']
+== OID Assignments
+
+This normative annex defines Object Identifiers (<<OID>>s) that are used as
+unique, stable, and versioned references for different information
+items. It provides Object Identifiers assigned under the IEEE 11073 OID
+arc.
+
+<<tbl_OID_Assignments>> specifies the Object Identifiers for conformity concepts
+defined in this standard.
+
+Every OID starts with 1.3.111.2.11073, which translates to the ASN.1
+notation ++{++iso(1) identified-organization(3) ieee(111)
+standards-association-numbered-series-standards(2) ieee11073(11073)}.
+The number XXXXX references this standard; it is followed by a version
+number and sub-arcs referring to particular concepts.
+
+Example: ++{++iso(1) identified-organization(3) ieee(111)
+standards-association-numbered-series-standards(2) ieee11073(11073)
+partXXXXX(XXXXX) version1(1) conformity(1)}
+
+.<<OID>> assignments
+[#tbl_OID_Assignments]
+|===
+|Primary identifier |Concept description |Secondary identifier
+
+|1.3.111.2.11073.XXXXX
+|Part XXXXX
+|partXXXXX
+
+|1.3.111.2.11073.XXXXX.0
+|Versions of IEEE 11073-XXXXX
+|versions
+
+|1.3.111.2.11073.XXXXX.0.1
+|IEEE 11073-XXXXX-20YY
+|version1
+
+|1.3.111.2.11073.XXXXX.1
+|This standard's conformity
+|conformity
+
+|===

@@ -1,0 +1,36 @@
+
+[ieee_overview=1]
+== Overview
+
+=== Scope
+
+This standard defines the requirements for Participants in a
+Service-Oriented Device Connectivity (SDC) System that comprises a
+network of point-of-care (PoC) <<MEDICAL_DEVICE>>s and medical IT systems to...
+
+// add if available
+// === Purpose
+
+// mandatory section for IEEE 11073 standards - do not remove
+=== Word usage
+
+The word __shall__ indicates mandatory requirements strictly to be followed in
+order to conform to the standard  and from which no deviation is permitted
+(__shall__ equals __is required to__).footnote:word_usage_1[The use of the word
+must is deprecated and cannot be used when stating mandatory requirements; must
+is used only to describe unavoidable situations.]
+
+The word __should__ indicates that among several possibilities one is
+recommended as particularly suitable, without mentioning or excluding others; or
+that a certain course of action is preferred but not necessarily
+required (__should__ equals __is recommended that__).
+
+The word __may__ is used to indicate a course of action permissible within the
+limits of the standard (__may__ equals is __permitted to__).
+
+The word __can__ is used for statements of possibility and capability, whether
+material, physical, or causal (__can__ equals __is able to__).
+footnote:word_usage_2[The use of will is deprecated and cannot be used when
+stating mandatory requirements; will is only used in statements of fact.]
+
+

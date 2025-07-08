@@ -1,0 +1,18 @@
+
+// instructs the backend to skip this section and subsections from rendering
+// 'skip' is a custom attribute and not recognized by all backends
+// support by: ieee_word
+[skip=1]
+== Definitions & Abbreviations
+
+// signifies this chapter to be the definition chapter
+[definitions=1]
+=== Definitions
+
+include::03-01_definitions.adoc[]
+
+// signifies this chapter to be the abbreviation chapter
+[abbreviations=1]
+=== Abbreviations
+
+include::03-02_abbreviations.adoc[]

@@ -1,0 +1,69 @@
+= P{ieee_metadata_designation}™/D{ieee_metadata_draft_number} -- Draft {ieee_metadata_trial_use} {ieee_metadata_gde_rec_prac_std} for {ieee_metadata_par_title}
+:doctype: book
+:xrefstyle: short
+:toc-title: Contents
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+:imagesdir: images/
+:docinfo: shared
+//
+// custom document attributes follow
+//
+// choose from "Amendment", "Corrigenda" or leave empty if this document is a baseline / revision
+:ieee_amendment_corrigenda:
+// amendment/corrigenda number as specified in par
+:ieee_amendment_corrigenda_number: tbd
+:ieee_metadata_designation: tbd
+:ieee_metadata_draft_number: tbd
+// choose from "Trial-Use" or leave empty
+:ieee_metadata_trial_use:
+// choose from "Standard", "Recommended Practice" or "Guide"
+:ieee_metadata_gde_rec_prac_std: Standard
+:ieee_metadata_par_title: tbd
+:ieee_metadata_committee_name: tbd
+:ieee_metadata_society_name: tbd
+:ieee_metadata_draft_date: 2025-05
+:ieee_metadata_working_group_name: tbd
+:ieee_metadata_chair_name: tbd
+:ieee_metadata_subgroup_chair_name: tbd
+// comma separated list of keywords
+:document_keywords: keyword1, keyword2, keyword3
+
+// include variables to refer to BICEPS and names defined in this spec
+include::generated/biceps_names.adoc[]
+include::generated/goodpractice_names.adoc[]
+
+
+include::00-01_abstract.adoc[]
+
+include::00-02_introduction.adoc[]
+
+include::01-00_overview.adoc[]
+
+include::02-00_normative_references.adoc[]
+
+include::03-00_definitions_acronyms_and_abbreviations.adoc[]
+
+include::04-00_notational_conventions.adoc[]
+
+// todo add your clause includes here
+// example clause containing syntax elements
+include::05-00_good_practice_normative_body.adoc[]
+
+
+include::99-00_implementation_conformity_statements.adoc[]
+
+// todo add your annex includes here
+
+include::annex-a_utilized_nomenclature_codes.adoc[]
+
+include::annex-b_oid_assignments.adoc[]
+
+include::annex-c_xml_schema.adoc[]
+
+include::annex-y_ics_tables.adoc[]
+
+include::annex-z_informative_bibliography_annex.adoc[]
+

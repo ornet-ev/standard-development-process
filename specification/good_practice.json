@@ -1,0 +1,15 @@
+{
+  "inputFile": "",
+  "backend": "ieee_word",
+  "strictPadding": 4,
+  "strictCategory": true,
+  "strictSdcRole": true,
+  "showStackTraceOnError": false,
+  "requirements": {
+    "numbers": [
+      1,
+      2,
+      3
+    ]
+  }
+}

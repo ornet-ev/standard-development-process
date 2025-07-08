@@ -1,0 +1,11 @@
+
+[bibliography,bib_group=normative]
+== Normative References
+
+* [[[nrm_IEEE_11073_10101,IEEE 11073-10101]]] IEEE 11073-10101, Health
+informatics — Point-of-care medical device communication — Part 10101:
+Nomenclature, 2019-10
+* [[[nrm_IEEE_11073_10207,IEEE 11073-10207]]] IEEE 11073-10207, Health
+informatics — Point-of-care medical device communication Part 10207: Domain
+Information and Service Model for Service-Oriented Point-of-Care Medical Device
+Communication

@@ -1,0 +1,6 @@
+*.docx
+*.pdf
+*.html
+/specification/.asciidoctor
+
+/.idea/

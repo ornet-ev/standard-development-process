@@ -1,0 +1,12 @@
+[bibliography, bib_group=informative]
+== Informative Bibliography Annex
+
+* [[[bib_XML, XML]]] W3C Recommendation, Extensible Markup Language (XML) 1.0 (Fifth Edition), Tim Bray et al., 26 Nov. 2008, available at https://www.w3.org/TR/2008/REC-xml-20081126/
+* [[[bib_XML_Namespaces, XML Namespaces]]] W3C Recommendation, Namespaces in XML
+1.0, 3rd ed., Bray, T., et al., 8 Dec. 2009., available at
+http://www.w3.org/TR/REC-xml-names/
+* [[[bib_XML_Schema, XML Schema]]] W3C Recommendation, XML Schema Definition
+Language (XSD) 1.1, 5 April 2012, Part 1 available at
+https://www.w3.org/TR/xmlschema11-1/ and Part 2 available at
+https://www.w3.org/TR/xmlschema11-2/
+

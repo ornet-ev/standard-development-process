@@ -1,0 +1,7 @@
+
+[appendix#anx_XML_Schema, normativity=normative]
+== XML Schema
+
+##tbd##
+// todo generate apkp extensions model output
+include::generated/goodpractice_xmlschema.adoc[]

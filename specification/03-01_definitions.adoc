@@ -1,0 +1,86 @@
+[[ACCOMPANYING_INFORMATION, ACCOMPANYING INFORMATION]]
+==== ACCOMPANYING INFORMATION
+
+Description goes here (normative)
+
+
+
+[[ADMINISTRATOR, ADMINISTRATOR]]
+==== ADMINISTRATOR
+
+Description goes here (normative)
+
+
+
+[[CONSUMER, CONSUMER]]
+
+Description goes here (normative)
+
+
+
+[[EXTENSION, EXTENSION]]
+==== EXTENSION
+
+Description goes here (normative).
+
+
+
+[[HEALTHCARE_DELIVERY_ORGANIZATION, HEALTHCARE DELIVERY ORGANIZATION]]
+==== HEALTHCARE DELIVERY ORGANIZATION
+
+Description goes here (normative).
+
+
+
+[[HEALTH_IT_SYSTEM, HEALTH IT SYSTEM]]
+==== HEALTH IT SYSTEM
+
+Description goes here (normative).
+
+NOTE: See also <<IT_NETWORK_NOTE1>>.
+
+
+
+[[IT_NETWORK, IT NETWORK]]
+==== IT NETWORK
+
+Description goes here (normative)
+
+[NOTE#IT_NETWORK_NOTE1, reftext='NOTE']
+====
+Multi-liner note of the description, that is also referencable; see <<HEALTH_IT_SYSTEM>>
+====
+
+
+
+[[MANUFACTURER, MANUFACTURER]]
+==== MANUFACTURER
+
+Description goes here (normative)
+
+
+
+[[MEDICAL_DEVICE, MEDICAL DEVICE]]
+==== MEDICAL DEVICE
+
+Description goes here (normative)
+
+NOTE: One-liner note of the description (informative)
+
+
+[[PARTICIPANT, PARTICIPANT]]
+
+Description goes here (normative)
+
+
+
+[[PROVIDER, PROVIDER]]
+
+Description goes here (normative)
+
+
+
+[[SYSTEM_OWNER, SYSTEM OWNER]]
+==== SYSTEM OWNER
+
+Description goes here (normative)

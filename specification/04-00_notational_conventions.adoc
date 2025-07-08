@@ -1,0 +1,76 @@
+
+== Notational conventions
+
+Within this standard, the term _requirement_ refers to
+
+* obligations (indicated by the keyword "SHALL"),
+* recommendations (indicated by the keyword "SHOULD"),
+* and permissible courses of action (indicated by the keyword "MAY").
+
+=== References to IEEE 11073-10207 model elements
+
+<<nrm_IEEE_11073_10207>> defines the participant, message, and
+extension model as <<bib_XML_Schema>> definitions. This specification
+references definitions from these models based on the following
+conventions:
+
+- Every XML Schema attribute, element, or type is identified by a
+qualified name (see <<bib_XML_Namespaces>>, section 4).
+- Namespace prefixes of qualified names are used in accordance with BICEPS
+namespace prefix mappings (see <<nrm_IEEE_11073_10207>>).
+- Nested XML element definitions or attribute definitions are separated
+from each other by using slashes ("/").
+- Attributes are referenced by using the at-sign ("@").
+
+In order to express an attribute or element value to be one of a set of
+literals, this specification uses curly brackets enclosing the allowed
+literals separated by commas. "∈" denotes set membership.
+
+==== Examples
+
+{pmHandleRef} points to the XML type "Handle" defined in the participant
+model.
+
+{msgOperationInvokedReport_msgReportPart_OperationTargetAttr} references an
+XML attribute named "OperationTarget". The attribute is defined in the
+XML element "ReportPart", which is defined in the XML element
+"OperationInvokedReport". The elements "ReportPart"and
+"OperationInvokedReport" both belong to the message model.
+
+{pmAbstractMetricValue_pmMetricQuality_ModeAttr} ∈ ++{++
+{pmGenerationMode_Test}, {pmGenerationMode_Demo} } expresses
+pm:MetricQuality/@Mode to be either Test or Demo.
+
+=== XML Schema namespaces
+
+In addition to the XML namespaces defined in <<nrm_IEEE_11073_10207>>, this
+standard  specifies <<EXTENSION>>s that are referenced by qualified names.
+<<tbl_Xml_Namespaces>> shows all namespace prefixes and mapped namespaces that
+are used throughout this document.
+
+.Namespace prefix to URI mapping
+[#tbl_Xml_Namespaces]
+|===
+|Namespace prefix |Namespace URI
+
+|xsd
+|++http://www.w3.org/2001/XMLSchema++
+
+|ext
+|++http://standards.ieee.org/downloads/11073/11073-10207-2017/extension++
+
+|pm
+|++http://standards.ieee.org/downloads/11073/11073-10207-2017/participant++
+
+|msg
+|++http://standards.ieee.org/downloads/11073/11073-10207-2017/message++
+
+|gp
+|++http://good-practice++
+|===
+
+=== Notation of 11073 Nomenclature Codes
+
+To increase readability, all IEEE 11073 term code notations are listed as RefIds
+if applicable. <<tbl_Utilized_Nomenclature_Codes>> shows all utilized RefIds and
+their translation to context-free IEEE 11073 Nomenclature codes.

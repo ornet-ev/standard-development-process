@@ -1,0 +1,32 @@
+
+[#cls_Implementation_Conformity_Statements]
+== Implementation Conformity Statements
+
+Implementation conformity statements (<<ICS>>s) take the form of tables.
+Templates for these <<ICS>> tables are given in <<anx_ICS_Tables>>.
+
+The tables are filled out and provided as an overall conformity statement
+document. Generally, an <<ICS>> table contains the following information:
+
+- Index, which is an identifier of a specific feature;
+- Reference, which is a reference to the requirement of the feature;
+- Status, which specifies the conformity level, i.e., as to whether the feature
+is mandatory, recommended, or permissible for a conforming implementation;
+- Support, in which the implementer specifies the characteristics of the feature
+in the implementation; and
+- Comment, in which the implementer provides additional information.
+
+The following values of the Status column are permitted:
+
+- m (mandatory, indicated by requirement keyword “SHALL”)
+- r (recommended, indicated by requirement keyword “SHOULD”)
+- p (permissible, indicated by requirement keyword “MAY”)
+
+The value of the Support column is permitted to range from simple to complex
+entries. Examples of simple values are:
+
+- yes (the requirement is fulfilled)
+- no (the requirement is not fulfilled)
+- n/a (the requirement is not applicable, reasons are given in the Comment column)
+
+All <<ICS>> tables can be found in <<anx_ICS_Tables>>.

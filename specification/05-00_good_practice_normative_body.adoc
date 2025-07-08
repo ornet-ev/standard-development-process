@@ -1,0 +1,117 @@
+== Normative content
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+=== Requirements
+
+.R1
+[requirement#r1, keyword='shall', sdc_role='provider', category='technical']
+****
+
+A <<PROVIDER>> SHALL lorem ipsum dolor sit amet.
+
+NOTE: Here is a note the requirement.
+
+NOTE: And a second note
+****
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum.
+
+Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+.R2
+[requirement#r2, keyword='shall', sdc_role='provider', category='technical', ics_assignments='custom_feature']
+****
+
+A <<PROVIDER>> SHALL lorem ipsum dolor sit amet.
+
+[NOTE#r2_NOTE]
+====
+Here is a single note to <<r2>>.
+====
+
+****
+
+.R3
+[requirement#r3, keyword='shall', sdc_role='consumer', category='technical', ics_assignments='custom_feature']
+****
+
+A <<CONSUMER>> SHALL lorem ipsum dolor sit amet.
+
+****
+
+=== Lists
+
+For IEEE standards, unordered enumerations cannot be nested.
+
+- Bullet point
+- Bullet point
+- Lists can contain markup, e.g. a reference to another clause:
+<<cls_Simple_table>>
+
+Ordered numerations can be nested as follows:
+
+. Bullet 1
+. Bullet 2
+.. Nested 1
+.. Nested 2
+... Nested 3
+. Bullet 1
+
+[#cls_Simple_table]
+=== Simple table
+
+To insert a table, use Asciidoc's table block. For IEEE standards, it is
+required to add a title (see <<tbl_TableId>>).
+
+The `cols` attribute defines the relative width distribution of the columns,
+based on 100% width.
+
+Tables can be rotated to landscape by using the attribute `orientation`:
+
+`orientation=landscape`
+
+.Title of the table
+[#tbl_TableId,cols='1,2,2']
+|===
+|Header 1 |Header 2 |Header 3
+
+|Column 1, row 1
+|Column 2, row 1
+|Column 3, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|Column 3, row 2
+
+|Column 1, row 3
+|Column 2, row 3
+|Column 3, row 3
+
+|Column 1, row 4
+|Column 2, row 4
+|Column 3, row 4
+|===
+
+=== Pictures
+
+Picture figures can be inserted by using the `image` macro of Asciidoc, see
+https://docs.asciidoctor.org/asciidoc/latest/macros/images/.
+
+=== Other Asciidoc markup
+
+Be careful using other Asciidoc markup like verse, equations, etc.
+There is currently no official support for Word backends.

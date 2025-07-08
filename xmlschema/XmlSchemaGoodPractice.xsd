@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://good-practice"
+            xmlns:ext="http://standards.ieee.org/downloads/11073/11073-10207-2017/extension"
+            targetNamespace="http://good-practice" elementFormDefault="qualified" attributeFormDefault="unqualified"
+            xml:lang="en">
+    <xsd:import namespace="http://standards.ieee.org/downloads/11073/11073-10207-2017/extension"
+                schemaLocation="ExtensionPoint.xsd"/>
+
+    <!--
+        Taken from: https://gitlab.com/sdc-suite/requirements-tooling/xmlschema2asciidoc/-/tree/main/xsd
+        Watch out for latest versions of the example schema.
+    -->
+
+    <!--
+        Naming conventions:
+        In order to avoid naming clashes of types and elements, simple and complex type names shall end on "Type".
+    -->
+
+    <!--
+        ext:MustUnderstand attributes shall be attached to elements, not to types.
+        Types are not tied to an extension and should be able to exist without a MustUnderstand attribute.
+    -->
+
+    <xsd:element name="SomeSimpleTypeBaseExtension">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute ref="ext:MustUnderstand" use="optional"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="SomeComplexTypeBaseExtension">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="tns:SomeSequenceBasedComplexType">
+                    <xsd:attribute ref="ext:MustUnderstand" use="optional"/>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="SomeSequenceBasedComplexType">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="Element1"/>
+            <xsd:element type="xsd:string" name="Element2"/>
+            <xsd:element type="xsd:string" name="Element3"/>
+        </xsd:sequence>
+        <xsd:attribute type="xsd:string" name="Attribute1"/>
+        <xsd:attribute type="xsd:string" name="Attribute2"/>
+        <xsd:attribute type="xsd:string" name="Attribute3"/>
+    </xsd:complexType>
+
+    <!--
+        Elements shall reference types, unless there is MustUnderstand attached.
+
+        By that, elements do not contain anonymous content.
+    -->
+
+    <xsd:element name="SomeElementNoExtension" type="tns:SomeSequenceBasedComplexType"/>
+
+    <!--
+        Complex types shall either contain exactly one choice or a sequence of elements.
+
+        Choice-based types shall not contain attributes.
+
+        Sequence-based types may contain attributes.
+    -->
+    <xsd:complexType name="SomeComplexTypeOfChoice">
+        <xsd:choice>
+            <xsd:element type="xsd:string" name="Element1"/>
+            <xsd:element type="xsd:string" name="Element2"/>
+            <xsd:element type="xsd:string" name="Element3"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="SomeComplexTypeOfSequence">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="Element1"/>
+            <xsd:element type="xsd:string" name="Element2"/>
+            <xsd:element type="xsd:string" name="Element3"/>
+        </xsd:sequence>
+        <xsd:attribute type="xsd:string" name="Attribute1"/>
+        <xsd:attribute type="xsd:string" name="Attribute2"/>
+        <xsd:attribute type="xsd:string" name="Attribute3"/>
+    </xsd:complexType>
+
+    <!--
+        Simple types shall be lists, unions, or restrictions of enumeration or minLength/maxLength respectively.
+
+        Simple types shall not be restrictions of pattern.
+    -->
+
+    <xsd:simpleType name="SomeSimpleTypeList">
+        <xsd:list itemType="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SomeSimpleTypeUnion">
+        <xsd:union memberTypes="xsd:string xsd:int xsd:date"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SomeSimpleTypeEnumeration">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Facet1"/>
+            <xsd:enumeration value="Facet2"/>
+            <xsd:enumeration value="Facet3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SomeSimpleTypeMinMax">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="10"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

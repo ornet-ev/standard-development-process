@@ -1,0 +1,16 @@
+
+[appendix#anx_Utilized_Nomenclature_Codes, normativity='informative']
+== Utilized 11073 nomenclature
+
+The following list shows a mapping of RefIds, which are used throughout
+this document, to IEEE 11073 CF10 codes.
+
+.RefId to context-free IEEE nomenclature code mapping
+[#tbl_Utilized_Nomenclature_Codes]
+|===
+|RefId |Context-free IEEE nomenclature code
+
+a|++MDC_DIM_DIMLESS++
+|262656
+
+|===

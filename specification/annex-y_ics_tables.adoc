@@ -1,0 +1,9 @@
+
+[appendix#anx_ICS_Tables, normativity='normative']
+== ICS Tables
+
+icstable::consumer[title='Consumer ICS table - built-in by SDC role', id='ics_consumer']
+
+icstable::provider[title='Provider ICS table - built-in by SDC role', id='ics_provider']
+
+icstable::custom_feature[title='Custome feature ICS table', id='ics_custom_feature']

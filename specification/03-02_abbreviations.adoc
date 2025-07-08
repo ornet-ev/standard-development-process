@@ -1,0 +1,6 @@
+[[ICS]] ICS:: Implementation Conformity Statement
+[[MDIB]] MDIB:: MEDICAL DATA INFORMATION BASE
+[[MDS]] MDS:: MEDICAL DEVICE SYSTEM
+[[OID]] OID:: Object Identifier
+[[VMD]] VMD:: VIRTUAL MEDICAL DEVICE
+[[XML]] XML:: Extensible Markup Language

@@ -1,0 +1,43 @@
+[general]
+inputXmlSchemaFile = '../xmlschema/XmlSchemaGoodPractice.xsd'
+
+outputAsciidocFile = '../specification/generated/goodpractice_xmlschema.adoc'
+outputVariablesFile = '../specification/generated/goodpractice_names.adoc'
+
+headingLevelOffset = 3
+
+asciidocIncludePrefix = "../schema_documentation/"
+
+plantUmlResourcesStorageDirectory = "plantuml/"
+plantUmlAsciidocResourcesDirectory = "generated/plantuml/"
+
+# plant uml image dpi.
+# recommendations:
+# - 300 for print view
+# - 80 for digital view
+plantUmlImageDpi = 300
+plantUmlImageTargetDirectory = "generated/plantuml/"
+
+# title of the overview section in the beginning of a namespace
+# leave out to use default
+overviewTitle = "Component Overview"
+
+# list of namespaces for which asciidoc output shall be generated
+outputNamespaceFilter = [
+    "http://good-practice"
+]
+
+# list of namespace for which the output is assumed to be part of the targeted
+# document (used to generate or omit cross-references within the document)
+linkedNamespaces = [
+    "http://good-practice"
+]
+
+# mapping of namespace prefixes to namespaces
+[namespaceMapping]
+# xsd is pre-configured
+# xsd = "http://www.w3.org/2001/XMLSchema"
+ext = "http://standards.ieee.org/downloads/11073/11073-10207-2017/extension"
+pm = "http://standards.ieee.org/downloads/11073/11073-10207-2017/participant"
+msg = "http://standards.ieee.org/downloads/11073/11073-10207-2017/message"
+gp = "http://good-practice"
