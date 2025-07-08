@@ -1,0 +1,1 @@
+#TBD: ../schema_documentation/gpSomeSequenceBasedComplexType_Attribute2Attr.adoc#

@@ -1,0 +1,1 @@
+#TBD: ../schema_documentation/gpSomeSimpleTypeBaseExtension.adoc#

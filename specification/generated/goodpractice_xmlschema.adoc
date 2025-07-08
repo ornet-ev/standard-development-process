@@ -1,0 +1,1060 @@
+[#http_good_practice]
+=== Component Overview
+
+.All types and elements in namespace http://good-practice
+[#http_good_practice_table, cols="1,1,1", options="header"]
+|===
+
+|Simple types
+|Complex types
+|Elements
+
+a|<<gpSomeSimpleTypeEnumeration>>
+a|<<gpSomeComplexTypeOfChoice>>
+a|<<gpSomeComplexTypeBaseExtension>>
+
+a|<<gpSomeSimpleTypeList>>
+a|<<gpSomeComplexTypeOfSequence>>
+a|<<gpSomeElementNoExtension>>
+
+a|<<gpSomeSimpleTypeMinMax>>
+a|<<gpSomeSequenceBasedComplexType>>
+a|<<gpSomeSimpleTypeBaseExtension>>
+
+a|<<gpSomeSimpleTypeUnion>>
+a|
+a|
+
+|===
+
+[#gpSomeSimpleTypeEnumeration, reftext='gp:SomeSimpleTypeEnumeration']
+=== gp:SomeSimpleTypeEnumeration
+
+include::../schema_documentation/gpSomeSimpleTypeEnumeration.adoc[]
+
+Additional object properties of gp:SomeSimpleTypeEnumeration are listed in xref:gpSomeSimpleTypeEnumeration_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeEnumeration.
+[#gpSomeSimpleTypeEnumeration_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeSimpleTypeEnumeration
+
+a|Component type
+a|Simple type
+
+a|Base type
+a|xsd:string
+
+a|Base type constraints
+a|Enumerated values, see <<gpSomeSimpleTypeEnumeration_facets>>
+
+|===
+
+Enumeration values of gp:SomeSimpleTypeEnumeration are listed in xref:gpSomeSimpleTypeEnumeration_facets[xrefstyle=short].
+
+.Enumeration items of gp:SomeSimpleTypeEnumeration
+[#gpSomeSimpleTypeEnumeration_facets, cols="1,3", options="header"]
+|===
+
+|Value
+|Description|Facet1
+a|include::../schema_documentation/gpSomeSimpleTypeEnumeration_facets_Facet1.adoc[]
+
+|Facet2
+a|include::../schema_documentation/gpSomeSimpleTypeEnumeration_facets_Facet2.adoc[]
+
+|Facet3
+a|include::../schema_documentation/gpSomeSimpleTypeEnumeration_facets_Facet3.adoc[]
+
+|===
+
+[#gpSomeSimpleTypeList, reftext='gp:SomeSimpleTypeList']
+=== gp:SomeSimpleTypeList
+
+include::../schema_documentation/gpSomeSimpleTypeList.adoc[]
+
+Additional object properties of gp:SomeSimpleTypeList are listed in xref:gpSomeSimpleTypeList_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeList.
+[#gpSomeSimpleTypeList_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|SomeSimpleTypeList
+
+a|Component type
+a|Simple type
+
+a|List of
+a|xsd:string
+
+|===
+
+[#gpSomeSimpleTypeMinMax, reftext='gp:SomeSimpleTypeMinMax']
+=== gp:SomeSimpleTypeMinMax
+
+include::../schema_documentation/gpSomeSimpleTypeMinMax.adoc[]
+
+Additional object properties of gp:SomeSimpleTypeMinMax are listed in xref:gpSomeSimpleTypeMinMax_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeMinMax.
+[#gpSomeSimpleTypeMinMax_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeSimpleTypeMinMax
+
+a|Component type
+a|Simple type
+
+a|Base type
+a|xsd:string
+
+a|Minimum length
+a|1
+
+a|Maximum length
+a|10
+
+|===
+
+[#gpSomeSimpleTypeUnion, reftext='gp:SomeSimpleTypeUnion']
+=== gp:SomeSimpleTypeUnion
+
+include::../schema_documentation/gpSomeSimpleTypeUnion.adoc[]
+
+Additional object properties of gp:SomeSimpleTypeUnion are listed in xref:gpSomeSimpleTypeUnion_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeUnion.
+[#gpSomeSimpleTypeUnion_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeSimpleTypeUnion
+
+a|Component type
+a|Simple type
+
+a|Union of
+a|xsd:string, xsd:int, xsd:date
+
+|===
+
+[#gpSomeComplexTypeOfChoice, reftext='gp:SomeComplexTypeOfChoice']
+=== gp:SomeComplexTypeOfChoice
+
+include::../schema_documentation/gpSomeComplexTypeOfChoice.adoc[]
+
+xref:gpSomeComplexTypeOfChoice_mindmap[xrefstyle=short] shows the data structure of gp:SomeComplexTypeOfChoice.
+
+.Data structure of gp:SomeComplexTypeOfChoice
+[plantuml#gpSomeComplexTypeOfChoice_mindmap,target=generated/plantuml/gpSomeComplexTypeOfChoice_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeComplexTypeOfChoice <<complex_type>>
+++_ <$choice{scale=0.1}> <<none>>
++++_ 1..1 <<none>>
+++++ gp:Element1 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element2 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element3 (xsd:string) <<element>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeComplexTypeOfChoice are listed in xref:gpSomeComplexTypeOfChoice_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfChoice.
+[#gpSomeComplexTypeOfChoice_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeComplexTypeOfChoice
+
+a|Component type
+a|Complex type
+
+|===
+
+[#gpSomeComplexTypeOfChoice_elements_attributes]
+==== Attributes and Elements
+
+[#gpSomeComplexTypeOfChoice_attributes]
+===== Attributes
+
+This component does not contain any attributes.
+
+[#gpSomeComplexTypeOfChoice_elements]
+===== Elements
+
+[#gpSomeComplexTypeOfChoice_gpElement1, reftext='gp:SomeComplexTypeOfChoice/gp:Element1']
+====== gp:SomeComplexTypeOfChoice/gp:Element1
+
+include::../schema_documentation/gpSomeComplexTypeOfChoice_gpElement1.adoc[]
+
+Additional object properties of gp:Element1 are listed in xref:gpSomeComplexTypeOfChoice_gpElement1_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfChoice/gp:Element1.
+[#gpSomeComplexTypeOfChoice_gpElement1_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element1
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeOfChoice_gpElement2, reftext='gp:SomeComplexTypeOfChoice/gp:Element2']
+====== gp:SomeComplexTypeOfChoice/gp:Element2
+
+include::../schema_documentation/gpSomeComplexTypeOfChoice_gpElement2.adoc[]
+
+Additional object properties of gp:Element2 are listed in xref:gpSomeComplexTypeOfChoice_gpElement2_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfChoice/gp:Element2.
+[#gpSomeComplexTypeOfChoice_gpElement2_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element2
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeOfChoice_gpElement3, reftext='gp:SomeComplexTypeOfChoice/gp:Element3']
+====== gp:SomeComplexTypeOfChoice/gp:Element3
+
+include::../schema_documentation/gpSomeComplexTypeOfChoice_gpElement3.adoc[]
+
+Additional object properties of gp:Element3 are listed in xref:gpSomeComplexTypeOfChoice_gpElement3_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfChoice/gp:Element3.
+[#gpSomeComplexTypeOfChoice_gpElement3_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element3
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeOfSequence, reftext='gp:SomeComplexTypeOfSequence']
+=== gp:SomeComplexTypeOfSequence
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence.adoc[]
+
+xref:gpSomeComplexTypeOfSequence_mindmap[xrefstyle=short] shows the data structure of gp:SomeComplexTypeOfSequence.
+
+.Data structure of gp:SomeComplexTypeOfSequence
+[plantuml#gpSomeComplexTypeOfSequence_mindmap,target=generated/plantuml/gpSomeComplexTypeOfSequence_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeComplexTypeOfSequence <<complex_type>>
+++_ @ <<none>>
++++_ 0..1 <<none>>
+++++ Attribute1 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute2 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute3 (xsd:string) <<attribute>>
+++_ <$sequence{scale=0.1}> <<none>>
++++_ 1..1 <<none>>
+++++ gp:Element1 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element2 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element3 (xsd:string) <<element>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeComplexTypeOfSequence are listed in xref:gpSomeComplexTypeOfSequence_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence.
+[#gpSomeComplexTypeOfSequence_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeComplexTypeOfSequence
+
+a|Component type
+a|Complex type
+
+|===
+
+[#gpSomeComplexTypeOfSequence_elements_attributes]
+==== Attributes and Elements
+
+[#gpSomeComplexTypeOfSequence_attributes]
+===== Attributes
+
+[#gpSomeComplexTypeOfSequence_Attribute1Attr, reftext='gp:SomeComplexTypeOfSequence/@Attribute1']
+====== gp:SomeComplexTypeOfSequence/@Attribute1
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_Attribute1Attr.adoc[]
+
+Additional object properties of @Attribute1 are listed in xref:gpSomeComplexTypeOfSequence_Attribute1Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/@Attribute1.
+[#gpSomeComplexTypeOfSequence_Attribute1Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute1
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeComplexTypeOfSequence_Attribute2Attr, reftext='gp:SomeComplexTypeOfSequence/@Attribute2']
+====== gp:SomeComplexTypeOfSequence/@Attribute2
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_Attribute2Attr.adoc[]
+
+Additional object properties of @Attribute2 are listed in xref:gpSomeComplexTypeOfSequence_Attribute2Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/@Attribute2.
+[#gpSomeComplexTypeOfSequence_Attribute2Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute2
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeComplexTypeOfSequence_Attribute3Attr, reftext='gp:SomeComplexTypeOfSequence/@Attribute3']
+====== gp:SomeComplexTypeOfSequence/@Attribute3
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_Attribute3Attr.adoc[]
+
+Additional object properties of @Attribute3 are listed in xref:gpSomeComplexTypeOfSequence_Attribute3Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/@Attribute3.
+[#gpSomeComplexTypeOfSequence_Attribute3Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute3
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeComplexTypeOfSequence_elements]
+===== Elements
+
+[#gpSomeComplexTypeOfSequence_gpElement1, reftext='gp:SomeComplexTypeOfSequence/gp:Element1']
+====== gp:SomeComplexTypeOfSequence/gp:Element1
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_gpElement1.adoc[]
+
+Additional object properties of gp:Element1 are listed in xref:gpSomeComplexTypeOfSequence_gpElement1_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/gp:Element1.
+[#gpSomeComplexTypeOfSequence_gpElement1_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element1
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeOfSequence_gpElement2, reftext='gp:SomeComplexTypeOfSequence/gp:Element2']
+====== gp:SomeComplexTypeOfSequence/gp:Element2
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_gpElement2.adoc[]
+
+Additional object properties of gp:Element2 are listed in xref:gpSomeComplexTypeOfSequence_gpElement2_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/gp:Element2.
+[#gpSomeComplexTypeOfSequence_gpElement2_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element2
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeOfSequence_gpElement3, reftext='gp:SomeComplexTypeOfSequence/gp:Element3']
+====== gp:SomeComplexTypeOfSequence/gp:Element3
+
+include::../schema_documentation/gpSomeComplexTypeOfSequence_gpElement3.adoc[]
+
+Additional object properties of gp:Element3 are listed in xref:gpSomeComplexTypeOfSequence_gpElement3_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeOfSequence/gp:Element3.
+[#gpSomeComplexTypeOfSequence_gpElement3_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element3
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeSequenceBasedComplexType, reftext='gp:SomeSequenceBasedComplexType']
+=== gp:SomeSequenceBasedComplexType
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType.adoc[]
+
+xref:gpSomeSequenceBasedComplexType_mindmap[xrefstyle=short] shows the data structure of gp:SomeSequenceBasedComplexType.
+
+.Data structure of gp:SomeSequenceBasedComplexType
+[plantuml#gpSomeSequenceBasedComplexType_mindmap,target=generated/plantuml/gpSomeSequenceBasedComplexType_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeSequenceBasedComplexType <<complex_type>>
+++_ @ <<none>>
++++_ 0..1 <<none>>
+++++ Attribute1 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute2 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute3 (xsd:string) <<attribute>>
+++_ <$sequence{scale=0.1}> <<none>>
++++_ 1..1 <<none>>
+++++ gp:Element1 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element2 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element3 (xsd:string) <<element>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeSequenceBasedComplexType are listed in xref:gpSomeSequenceBasedComplexType_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType.
+[#gpSomeSequenceBasedComplexType_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeSequenceBasedComplexType
+
+a|Component type
+a|Complex type
+
+a|Used by
+a|<<gpSomeElementNoExtension>>
+
+|===
+
+[#gpSomeSequenceBasedComplexType_elements_attributes]
+==== Attributes and Elements
+
+[#gpSomeSequenceBasedComplexType_attributes]
+===== Attributes
+
+[#gpSomeSequenceBasedComplexType_Attribute1Attr, reftext='gp:SomeSequenceBasedComplexType/@Attribute1']
+====== gp:SomeSequenceBasedComplexType/@Attribute1
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_Attribute1Attr.adoc[]
+
+Additional object properties of @Attribute1 are listed in xref:gpSomeSequenceBasedComplexType_Attribute1Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/@Attribute1.
+[#gpSomeSequenceBasedComplexType_Attribute1Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute1
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeSequenceBasedComplexType_Attribute2Attr, reftext='gp:SomeSequenceBasedComplexType/@Attribute2']
+====== gp:SomeSequenceBasedComplexType/@Attribute2
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_Attribute2Attr.adoc[]
+
+Additional object properties of @Attribute2 are listed in xref:gpSomeSequenceBasedComplexType_Attribute2Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/@Attribute2.
+[#gpSomeSequenceBasedComplexType_Attribute2Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute2
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeSequenceBasedComplexType_Attribute3Attr, reftext='gp:SomeSequenceBasedComplexType/@Attribute3']
+====== gp:SomeSequenceBasedComplexType/@Attribute3
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_Attribute3Attr.adoc[]
+
+Additional object properties of @Attribute3 are listed in xref:gpSomeSequenceBasedComplexType_Attribute3Attr_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/@Attribute3.
+[#gpSomeSequenceBasedComplexType_Attribute3Attr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|Attribute3
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|xsd:string
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeSequenceBasedComplexType_elements]
+===== Elements
+
+[#gpSomeSequenceBasedComplexType_gpElement1, reftext='gp:SomeSequenceBasedComplexType/gp:Element1']
+====== gp:SomeSequenceBasedComplexType/gp:Element1
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_gpElement1.adoc[]
+
+Additional object properties of gp:Element1 are listed in xref:gpSomeSequenceBasedComplexType_gpElement1_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/gp:Element1.
+[#gpSomeSequenceBasedComplexType_gpElement1_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element1
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeSequenceBasedComplexType_gpElement2, reftext='gp:SomeSequenceBasedComplexType/gp:Element2']
+====== gp:SomeSequenceBasedComplexType/gp:Element2
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_gpElement2.adoc[]
+
+Additional object properties of gp:Element2 are listed in xref:gpSomeSequenceBasedComplexType_gpElement2_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/gp:Element2.
+[#gpSomeSequenceBasedComplexType_gpElement2_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element2
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeSequenceBasedComplexType_gpElement3, reftext='gp:SomeSequenceBasedComplexType/gp:Element3']
+====== gp:SomeSequenceBasedComplexType/gp:Element3
+
+include::../schema_documentation/gpSomeSequenceBasedComplexType_gpElement3.adoc[]
+
+Additional object properties of gp:Element3 are listed in xref:gpSomeSequenceBasedComplexType_gpElement3_properties[xrefstyle=short].
+
+.Properties of gp:SomeSequenceBasedComplexType/gp:Element3.
+[#gpSomeSequenceBasedComplexType_gpElement3_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:Element3
+
+a|Component type
+a|Element
+
+a|Type reference
+a|xsd:string
+
+a|Cardinality
+a|1..1
+
+|===
+
+[#gpSomeComplexTypeBaseExtension, reftext='gp:SomeComplexTypeBaseExtension']
+=== gp:SomeComplexTypeBaseExtension
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension.adoc[]
+
+xref:gpSomeComplexTypeBaseExtension_mindmap[xrefstyle=short] shows the data structure of gp:SomeComplexTypeBaseExtension.
+
+.Data structure of gp:SomeComplexTypeBaseExtension
+[plantuml#gpSomeComplexTypeBaseExtension_mindmap,target=generated/plantuml/gpSomeComplexTypeBaseExtension_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeComplexTypeBaseExtension <<element>>
+++_ @ <<none>>
++++_ 0..1 <<none>>
+++++ Attribute1 (xsd:string) <<attribute_inherited>>
++++_ 0..1 <<none>>
+++++ Attribute2 (xsd:string) <<attribute_inherited>>
++++_ 0..1 <<none>>
+++++ Attribute3 (xsd:string) <<attribute_inherited>>
++++_ 0..1 <<none>>
+++++ MustUnderstand (ext:MustUnderstand) <<attribute>>
+++_ <$sequence{scale=0.1}> <<none>>
++++_ 1..1 <<none>>
+++++ gp:Element1 (xsd:string) <<element_inherited>>
++++_ 1..1 <<none>>
+++++ gp:Element2 (xsd:string) <<element_inherited>>
++++_ 1..1 <<none>>
+++++ gp:Element3 (xsd:string) <<element_inherited>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeComplexTypeBaseExtension are listed in xref:gpSomeComplexTypeBaseExtension_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeBaseExtension.
+[#gpSomeComplexTypeBaseExtension_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeComplexTypeBaseExtension
+
+a|Component type
+a|Element of anonymous type
+
+a|Base type
+a|<<gpSomeSequenceBasedComplexType>>
+
+|===
+
+[#gpSomeComplexTypeBaseExtension_elements_attributes]
+==== Attributes and Elements
+
+[#gpSomeComplexTypeBaseExtension_attributes]
+===== Attributes
+
+[#gpSomeComplexTypeBaseExtension_Attribute1Attr, reftext='gp:SomeComplexTypeBaseExtension/@Attribute1']
+====== gp:SomeComplexTypeBaseExtension/@Attribute1
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_Attribute1Attr[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_Attribute1Attr.adoc[]
+[#gpSomeComplexTypeBaseExtension_Attribute2Attr, reftext='gp:SomeComplexTypeBaseExtension/@Attribute2']
+====== gp:SomeComplexTypeBaseExtension/@Attribute2
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_Attribute2Attr[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_Attribute2Attr.adoc[]
+[#gpSomeComplexTypeBaseExtension_Attribute3Attr, reftext='gp:SomeComplexTypeBaseExtension/@Attribute3']
+====== gp:SomeComplexTypeBaseExtension/@Attribute3
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_Attribute3Attr[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_Attribute3Attr.adoc[]
+[#gpSomeComplexTypeBaseExtension_extMustUnderstandAttr, reftext='gp:SomeComplexTypeBaseExtension/@ext:MustUnderstand']
+====== gp:SomeComplexTypeBaseExtension/@ext:MustUnderstand
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_extMustUnderstandAttr.adoc[]
+
+Additional object properties of @ext:MustUnderstand are listed in xref:gpSomeComplexTypeBaseExtension_extMustUnderstandAttr_properties[xrefstyle=short].
+
+.Properties of gp:SomeComplexTypeBaseExtension/@ext:MustUnderstand.
+[#gpSomeComplexTypeBaseExtension_extMustUnderstandAttr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|ext:MustUnderstand
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|ext:MustUnderstand
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeComplexTypeBaseExtension_elements]
+===== Elements
+
+[#gpSomeComplexTypeBaseExtension_gpElement1, reftext='gp:SomeComplexTypeBaseExtension/gp:Element1']
+====== gp:SomeComplexTypeBaseExtension/gp:Element1
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_gpElement1[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_gpElement1.adoc[]
+[#gpSomeComplexTypeBaseExtension_gpElement2, reftext='gp:SomeComplexTypeBaseExtension/gp:Element2']
+====== gp:SomeComplexTypeBaseExtension/gp:Element2
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_gpElement2[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_gpElement2.adoc[]
+[#gpSomeComplexTypeBaseExtension_gpElement3, reftext='gp:SomeComplexTypeBaseExtension/gp:Element3']
+====== gp:SomeComplexTypeBaseExtension/gp:Element3
+
+This object is derived from gp:SomeSequenceBasedComplexType and is further specified in xref:gpSomeSequenceBasedComplexType_gpElement3[xrefstyle=short].
+
+include::../schema_documentation/gpSomeComplexTypeBaseExtension_gpElement3.adoc[]
+[#gpSomeElementNoExtension, reftext='gp:SomeElementNoExtension']
+=== gp:SomeElementNoExtension
+
+include::../schema_documentation/gpSomeElementNoExtension.adoc[]
+
+xref:gpSomeElementNoExtension_mindmap[xrefstyle=short] shows the data structure of gp:SomeElementNoExtension.
+
+.Data structure of gp:SomeElementNoExtension
+[plantuml#gpSomeElementNoExtension_mindmap,target=generated/plantuml/gpSomeElementNoExtension_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeElementNoExtension <<element>>
+++_ @ <<none>>
++++_ 0..1 <<none>>
+++++ Attribute1 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute2 (xsd:string) <<attribute>>
++++_ 0..1 <<none>>
+++++ Attribute3 (xsd:string) <<attribute>>
+++_ <$sequence{scale=0.1}> <<none>>
++++_ 1..1 <<none>>
+++++ gp:Element1 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element2 (xsd:string) <<element>>
++++_ 1..1 <<none>>
+++++ gp:Element3 (xsd:string) <<element>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeElementNoExtension are listed in xref:gpSomeElementNoExtension_properties[xrefstyle=short].
+
+.Properties of gp:SomeElementNoExtension.
+[#gpSomeElementNoExtension_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeElementNoExtension
+
+a|Component type
+a|Element
+
+a|Type reference
+a|<<gpSomeSequenceBasedComplexType>>
+
+|===
+
+[#gpSomeSimpleTypeBaseExtension, reftext='gp:SomeSimpleTypeBaseExtension']
+=== gp:SomeSimpleTypeBaseExtension
+
+include::../schema_documentation/gpSomeSimpleTypeBaseExtension.adoc[]
+
+xref:gpSomeSimpleTypeBaseExtension_mindmap[xrefstyle=short] shows the data structure of gp:SomeSimpleTypeBaseExtension.
+
+.Data structure of gp:SomeSimpleTypeBaseExtension
+[plantuml#gpSomeSimpleTypeBaseExtension_mindmap,target=generated/plantuml/gpSomeSimpleTypeBaseExtension_mindmap,format=png]
+....
+@startmindmap
+
+!include generated/plantuml/sprites/sequence.sprite
+!include generated/plantuml/sprites/choice.sprite
+!include generated/plantuml/mindmap_style.puml.inc
+
+skinparam dpi 300
+
++ gp:SomeSimpleTypeBaseExtension <<element>>
+++_ @ <<none>>
++++_ 0..1 <<none>>
+++++ MustUnderstand (ext:MustUnderstand) <<attribute>>
+
+@endmindmap
+....
+
+Additional object properties of gp:SomeSimpleTypeBaseExtension are listed in xref:gpSomeSimpleTypeBaseExtension_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeBaseExtension.
+[#gpSomeSimpleTypeBaseExtension_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|gp:SomeSimpleTypeBaseExtension
+
+a|Component type
+a|Element of anonymous type
+
+a|Base type
+a|xsd:string
+
+|===
+
+[#gpSomeSimpleTypeBaseExtension_elements_attributes]
+==== Attributes and Elements
+
+[#gpSomeSimpleTypeBaseExtension_attributes]
+===== Attributes
+
+[#gpSomeSimpleTypeBaseExtension_extMustUnderstandAttr, reftext='gp:SomeSimpleTypeBaseExtension/@ext:MustUnderstand']
+====== gp:SomeSimpleTypeBaseExtension/@ext:MustUnderstand
+
+include::../schema_documentation/gpSomeSimpleTypeBaseExtension_extMustUnderstandAttr.adoc[]
+
+Additional object properties of @ext:MustUnderstand are listed in xref:gpSomeSimpleTypeBaseExtension_extMustUnderstandAttr_properties[xrefstyle=short].
+
+.Properties of gp:SomeSimpleTypeBaseExtension/@ext:MustUnderstand.
+[#gpSomeSimpleTypeBaseExtension_extMustUnderstandAttr_properties, cols="1,2", options="header"]
+|===
+
+|Property
+|Value
+
+a|Name
+a|ext:MustUnderstand
+
+a|Component type
+a|Attribute
+
+a|Type reference
+a|ext:MustUnderstand
+
+a|Use
+a|Optional
+
+a|Default
+a|None
+
+|===
+
+[#gpSomeSimpleTypeBaseExtension_elements]
+===== Elements
+
+This component does not contain any elements.
