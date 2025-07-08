@@ -2,5 +2,5 @@
 *.pdf
 *.html
 /specification/.asciidoctor
-
+/specification/images/generated
 /.idea/
