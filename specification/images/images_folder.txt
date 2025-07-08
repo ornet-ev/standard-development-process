@@ -1,0 +1,3 @@
+Drop any images you plan to insert into the specification in here.
+
+Supported formats: PNG, JPEG.
