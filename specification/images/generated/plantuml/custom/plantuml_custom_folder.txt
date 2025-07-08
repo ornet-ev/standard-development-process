@@ -1,0 +1,8 @@
+Target your PlantUML diagrams to this folder to avoid name clashes with diagrams generated from the XML Schema Converter.
+
+Example:
+
+[plantuml#fig_XYZ,target=generated/plantuml/custom/fig_XYZ,format=png]
+....
+// PlantUML code here
+....

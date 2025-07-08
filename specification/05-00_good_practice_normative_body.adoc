@@ -111,6 +111,28 @@ Tables can be rotated to landscape by using the attribute `orientation`:
 Picture figures can be inserted by using the `image` macro of Asciidoc, see
 https://docs.asciidoctor.org/asciidoc/latest/macros/images/.
 
+=== PlantUML
+
+This converter supports to add PlantUML diagrams to the generated output by
+leveraging a dedicated code block, see <<fig_plantumlexample>>.
+
+.Outline of an exemplary PlantUML figure
+[plantuml#fig_plantumlexample,target=generated/plantuml/custom/fig_plantumlexample,format=png]
+....
+@startuml
+
+' use high dpi to produce better output
+skinparam dpi 300
+
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+
+@enduml
+....
+
 === Other Asciidoc markup
 
 Be careful using other Asciidoc markup like verse, equations, etc.
