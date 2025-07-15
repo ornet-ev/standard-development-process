@@ -1,3 +1,3 @@
 #!/bin/bash
-mkdir ieee_11073_10702
-cp specification/ieee_11073_10702.docx ieee_11073_10702/ieee_11073_10702.docx
+mkdir good_practice
+cp specification/good_practice.docx good_practice/good_practice.docx
