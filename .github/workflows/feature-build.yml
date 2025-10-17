@@ -76,7 +76,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install generator
-        run: pip install git+https://github.com/ornet-ev/asciidoc-to-reqif.git@fc1f13aa7ddfb85938ac77a054296d629a1b90ca
+        run: pip install git+https://github.com/ornet-ev/asciidoc-to-reqif.git@1fa1036735276bc45429d0d28ecd83f1e92d5040
 
       - name: generate ReqIF
         run: asciidoc-to-reqif input/specification/good_practice.adoc good_practice.reqifz -vv --json input/specification/good_practice.json
